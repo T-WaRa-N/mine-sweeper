@@ -1,16 +1,24 @@
 .App {
   text-align: center;
+  background-color: rgb(164, 196, 178);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+.container{
+  width: "80rem";
+  margin-top: 20px;
+}
+h1{
+  text-align: center;
+  background-color: rgb(164, 196, 178);;
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -35,4 +43,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  display: block;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+td {
+  background-color: rgb(46, 51, 46);
+  border-bottom: 4px solid grey;
+  border-right: 4px solid grey;
+  border-top: 4px solid lightgray;
+  border-left: 4px solid lightgray;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.clicked {
+  background-color: grey;
+  border: 4px solid darkgrey !important;
+}
+
+.bomb.clicked {
+  color: rgb(216, 0, 0) !important;
+  font-size: 30px;
+  padding: 0px;
+}
+
+.flagBoolean{
+  color: red;
+}
+
+button{
+  width: 31rem;
+  background-color:rgb(76, 87, 76);
+  color: rgb(26, 29, 26);
+}
+
+.mapping{
+  background-color: yellow;
+  height: 86.3vh;
 }
